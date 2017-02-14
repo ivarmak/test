@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jelmer's personal Git cheatsheet</title>
+		<link rel="stylesheet" href="css/default.css">
+	</head>
+	<body>
+		<header>
+			<h1>Jelmer's personal website</h1>
+			<p>about Git and other stuff</p>
+			<nav>
+				<ul>
+					<li><a href="index.html">Homepage</a></li>
+					<li><a href="cheatsheet.html">Git cheat sheet</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<h2>Configuring git</h2>
+			<p>Setting your name and email:</p>
+			<pre><code>git config --global --add user.name "Jelmer van der Linde"</code></pre>
+			<pre><code>git config --global --add user.email jelmer@ikhoefgeen.nl</code></pre>
+		</section>
+		<section>
+			<h2>Adding and committing</h2>
+
+			<p>Adding and committing <tt>test.html</tt>:</p>
+			<pre><code>git add text.html</code></pre>
+			<pre><code>git commit -m "Updating the test text."</code></pre>
+	
+			<p>Seeing the status of your current working directory:</p>
+			<pre><code>git status</code></pre>
+
+			<p>Seeing your changes:</p>
+			<pre><code>git log</code></pre>
+		</section>
+		<section>
+			<h2>Branches</h2>
+
+			<p>See all branches and your current branch:</p>
+			<pre><code>git branch</code></pre>
+
+			<p>Creating a branch:</p>
+			<pre><code>git branch <var>branch-name</var></code></pre>
+
+			<p>Switching to a branch:</p>
+			<pre><code>git checkout <var>branch-name</var></code></pre>
+
+			<p>Merging an other branch into your current branch:</p>
+			<pre><code>git merge <var>other-branch</var></code></pre>
+
+			<p>Deleting a branch:</p>
+			<pre><code>git branch -d <var>branch-name</var></code></pre>
+		<section>
+			<h2>Pushing and pulling</h2>
+			
+			<p>Getting started by cloning a repository:</p>
+			<pre><code>git clone your-remote-repo.git target-directory</code></pre>
+
+			<p>Listing all your remotes:</p>
+			<pre><code>git remote -v</code></pre>
+
+			<p>Pushing to remote:</p>
+			<pre><code>git push [<var>remote-name</var>] [<var>branch-name</var>]</code></pre>
+
+			<p>Pulling from remote:</p>
+			<pre><code>git pull [<var>remote-name</var>]</code></pre>
+		</section>
+		<footer>
+			<p>Search Engine X is your friend!</p>
+			<p>I love you!</p>
+		</footer>
+	</body>
+</html>

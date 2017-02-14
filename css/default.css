@@ -1,0 +1,72 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font: 12px/16px sans-serif;
+}
+
+header {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+header p {
+	font-style: italic;
+}
+
+header nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+header nav ul li {
+	list-style: none;
+	display: inline;
+}
+
+header nav ul li a {
+	display: inline-block;
+	padding: 0 0.5em;
+	line-height: 1.5em;
+	text-decoration: none;
+	background: #eee;
+	border-radius: 3px;
+	color: #C60C30;
+}
+
+header nav ul li a:hover {
+	background: #C60C30;
+	color: white;
+}
+
+section {
+	max-width: 600px;
+	margin: 40px auto;
+}
+
+figure {
+	overflow: hidden;
+	background: #eee;
+	padding: 5%;
+	border-radius: 3px;
+}
+
+figure img {
+	width: 100%;
+	border-radius: 3px;
+}
+
+figure figcaption {
+	margin-top: 8px;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+code {
+	padding-left: 1em;
+	border-left: 2px solid #ccc;
+}
